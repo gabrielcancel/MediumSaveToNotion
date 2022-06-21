@@ -1,0 +1,6 @@
+{
+    "name": "Medium Save To Notion",
+    "description": "Save Medium article to Notion Database",
+    "version": "1.0",
+    "manifest_version": 3
+  }
