@@ -1,6 +1,20 @@
 {
-    "name": "Medium Save To Notion",
-    "description": "Save Medium article to Notion Database",
-    "version": "1.0",
-    "manifest_version": 3
-  }
+  "name": "Medium Save To Notion",
+  "description": "Save Medium article to Notion Database",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": ["storage", "webRequest", "activeTab", "scripting"],
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; connect-src https://* data: blob: filesystem:;"
+  },
+  "host_permissions": ["https://api.notion.com/*"]
+}
