@@ -1,5 +1,5 @@
-let secret_val = "secret_paIj64fXZ0O4Voj1mgpZwdQtLLWRs72Z6VpJmauC99k";
-let db_id_val = "11a27777f60e45d1aec0af50acc6a9e3";
+let secret_val = "";
+let db_id_val = "";
 
 const addElement = async (db_id, element, secret) => {
   const url = new URL("https://api.notion.com/v1/pages");
